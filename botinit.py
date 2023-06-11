@@ -10,4 +10,13 @@ bot.set_my_commands([
 ])
 
 markup = tlb.types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
+button_info = tlb.types.KeyboardButton('Now Date 🕰')
+markup.add(
+    button_info
+)
 
+inlinemrk = tlb.types.InlineKeyboardMarkup()
+inlbutton_poo = tlb.types.InlineKeyboardButton(text='PoO', callback_data='💩')
+inlinemrk.add(
+    inlbutton_poo
+)
